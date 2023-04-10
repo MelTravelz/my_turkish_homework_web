@@ -13,7 +13,7 @@ RSpec.describe RandomPromptFacade do
         expect(response.get_prompt("1")).to be_an(OpenStruct)
 
         # Are these tests necessary here since we'll be testing the values in the view/facade spec?
-        expect(response.get_prompt("1").image_url_small).to eq("https://images.unsplash.com/photo-1680417264930-f62e6af52e64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MzM0NTl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODExMDI1MjI&ixlib=rb-4.0.3&q=80&w=400")
+        expect(response.get_prompt("1").image_url_small).to eq("https://images.unsplash.com/photo-1680792563719-288027b2a090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MzM0NTl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODExMDYzNDA&ixlib=rb-4.0.3&q=80&w=400")
         expect(response.get_prompt("1").turkish_verb).to eq("(i) bilmek")
         expect(response.get_prompt("1").english_verb).to eq("to know")
       end
